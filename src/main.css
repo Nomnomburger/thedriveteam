@@ -1,0 +1,229 @@
+/*COLOURS*/
+:root {
+  --primary: #F3FFBF;
+  --lightblue: #BFF3FF;
+  --darkblue: #005E73;
+  --darkbluelighter: #006075;
+  --secondary: #0085A3;
+}
+
+html {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--darkblue);
+  overflow-x: hidden;
+}
+
+.cover-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15vh;
+}
+.cover-container-inner {
+  width: 70%;
+}
+
+.start-row {
+  padding: 0;
+  margin: 0;
+}
+
+.main-txt {
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 36px;
+  color: var(--lightblue);
+  text-align: left;
+}
+
+.podcast-txt {
+  margin-top: 46px;
+}
+
+.podcast-image {
+  width: 100%;
+  height: auto;
+}
+
+.service-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15vh;
+}
+
+.service-card {
+  width: 450px;
+  height: 210px;
+  background-color: var(--secondary);
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.service-name {
+  padding-top: 24px;
+  padding-left: 24px;
+}
+
+.service-icon {
+  width: 38px;
+  height: auto;
+
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.service-btn-wide {
+  width: 100%;
+  height: 78px;
+  background-color: var(--lightblue);
+  position: absolute;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+.service-btn-wide:hover {
+  background-color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.service-btn-square {
+  width: 78px;
+  height: 78px;
+  background-color: var(--primary);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.service-btn-txt {
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: var(--darkbluelighter);
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.service-btn-icon {
+  font-size: 35px;
+  color: var(--darkbluelighter);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-btn {
+  width: 450px;
+  height: 45px;
+  background-color: var(--secondary);
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.desc-container {
+  background-color: var(--lightblue);
+  font-family: forma-djr-text, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  color: var(--secondary);
+  padding: 140px;
+  margin-top: 150px;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 144%;
+}
+
+footer {
+  background-color: var(--lightblue);
+  font-family: forma-djr-text, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-align: right;
+  color: var(--secondary);
+  padding-right: 140px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  .top-row {
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+  .cover-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0;
+  }
+  .cover-container-inner {
+    width: 100%;
+  }
+
+  .podcast-txt {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+  
+  .service-card-container {
+    display: inline;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .service-card {
+    width: 100%;
+    height: 170px;
+    background-color: var(--secondary);
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .service-btn-wide {
+    width: 100%;
+    height: 68px;
+  }
+  .service-btn-square {
+    width: 68px;
+    height: 68px;
+  }
+  .service-btn-icon {
+    font-size: 28px;
+  }
+
+  .desc-container {
+    padding: 10px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    margin-top: 30px;
+  }
+
+  footer {
+    background-color: var(--lightblue);
+    font-family: forma-djr-text, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    text-align: left;
+    color: var(--secondary);
+    padding-right: 0px;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
