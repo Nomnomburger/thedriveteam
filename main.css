@@ -126,6 +126,50 @@ body {
   background-color: var(--secondary);
   margin-bottom: 25px;
   position: relative;
+  display: flex;
+  align-items: center;
+}
+.more-btn-txt {
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: var(--lightblue);
+  padding-left: 25px;
+  margin-bottom: 0px;
+  transition: all 0.3s ease;
+}
+.more-btn-link {
+  text-decoration: none;
+}
+
+.more-btn:hover > .more-btn-txt, .more-btn:hover > .more-btn-icon {
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.more-btn-icon {
+  color: var(--lightblue);
+  position: absolute;
+  right: 25px;
+  font-size: 20px;
+}
+
+.social-btn {
+  width: 270px;
+  height: 45px;
+  background-color: var(--secondary);
+  margin-bottom: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+}
+.donate-btn {
+  background-color: var(--primary);
+}
+.donate-btn-txt {
+  color: var(--secondary);
 }
 
 .desc-container {
@@ -153,6 +197,15 @@ footer {
   padding-right: 140px;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.footer-link {
+  text-decoration: underline;
+  color: var(--secondary);
+}
+.footer-link:hover {
+  text-decoration: underline;
+  color: var(--darkblue);
 }
 
 
@@ -204,6 +257,16 @@ footer {
   }
   .service-btn-icon {
     font-size: 28px;
+  }
+
+  .more-btn {
+    width: 100%;
+    height: 45px;
+  }
+
+  .social-btn {
+    width: 100%;
+    height: 45px;
   }
 
   .desc-container {
